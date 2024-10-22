@@ -1,62 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header>
-    <h1>Brendah Kiragu</h1>
-    <nav>
-      <ul>
-        <li><a href="#about"></a></li>
-        <li><a href="projects"></a></li>
-        <li><a href="resume"></a></li>
-        <li><a href="contact"></a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brendah Kiragu - Web Designer & Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="c-logo"><a href="#home">Brendah.</a></h1>
+        <nav class="c-nav">
+          <a href="#services">SERVICES</a>
+          <a href="#work">WORK</a>
+          <a href="#about">ABOUT</a>
+          <a id="c-contact" href="#contact">LET'S TALK</a>
+        </nav>
+      </div>
+    </header>
 
-  <section id="hero-section">
- <!-- Introduction with a professional photo.
-Name, profession, and a brief tagline.
-Call-to-action buttons for contact and social media links. -->
+    <section id="home">
+      <h3>Web Designer & Developer</h3>
+      <p>
+        Premium Web Design, Development, and API services to get your business
+        online
+      </p>
+      <p>MY SERVICES</p>
+      <!-- Downward arrow linking to services -->
+      <a href="#services" style="display: block; margin-top: 10px">
+        &#x2193;
+        <!-- Unicode downward arrow -->
+      </a>
+    </section>
 
-  </section id="about">
-  <!-- Detailed personal introduction with a professional designation.
-Key attributes like creativity, dedication, and hard work are highlighted.
-Additional personal details and a download link for the resume. -->
+    <section id="services">
+      <h1>Services</h1>
+      <div>
+        <p>01</p>
+        <h3>WEB DESIGN</h3>
+        <p>
+          Visually stunning web designs that captivate your audience by blending
+          your brand voice and customer needs.
+        </p>
+      </div>
+      <div>
+        <p>02</p>
+        <h3>WEB DEVELOPMENT</h3>
+        <p>
+          Custom web development solutions tailored to your specifications,
+          delivering a flawless user experience.
+        </p>
+      </div>
+      <div>
+        <p>03</p>
+        <h3>CONTENT & SEO</h3>
+        <p>
+          Proven SEO strategies that enhance your online presence, bringing you
+          to the forefront of search results.
+        </p>
+      </div>
+    </section>
 
-  <section id="skills">
-  <!-- Skills:
-Graphical representation of various skills and expertise levels. -->
-  </section>
+    <section id="about">
+      <h1>BRENDAH KIRAGU</h1>
+      <h2>Your Partner in Bringing Your Web Design Vision to Life</h2>
+      <p>
+        As a freelance web designer and developer, I bring creativity and
+        technical expertise to every project. Whether developing a new site from
+        scratch or optimizing an existing one, my goal is always excellence in
+        both form and function.
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1647797819874-f51a8a8fc5c0?q=80&w=418&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Brendah Kiragu profile picture"
+      />
+    </section>
 
-  <section  id="portfolio">
-    <!-- Showcase of recent projects with images.
-Categories and filters to organize the portfolio. -->
-  </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>Let's get in touch</p>
+      <form class="contact-form" action="get">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <textarea name="message" id="">Message</textarea>
+        <button>Send Message</button>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:brendakiragu02@gmail.com" target="_blank">Email</a>
+        <span class="arrow">
+          <a href="mailto:brendakiragu02@gmail.com" target="_blank">&#8594;</a>
+        </span>
+      </div>
 
-  <section id='services'>
-  <!-- List of services offered, such as desktop apps, mobile apps, web
-   development, security systems, custom algorithms, and web consulting. -->
-  </section>
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/brendah-mwihaki-kiragu-10432218a/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <span
+          ><a
+            href="https://www.linkedin.com/in/brendah-mwihaki-kiragu-10432218a/"
+            >&#8594;</a
+          ></span
+        >
+      </div>
 
-  <section id="user-experience">
-    <!-- Emphasis on providing the best user experience.
-  Testimonials from clients to build credibility. -->
-  </section>
-  
-  <section id="blog">
-    <!-- Section for recent blog posts to share knowledge and updates. -->
-  </section>
-  
-  <section id="contact">
-    <!-- Contact information including address, phone, and email.
-  Interactive map for location.
-  Contact form for sending messages directly from the website. -->
-  </section>
+      <div class="contact-links">
+        <a href="https://github.com/BrendahKiragu" target="_blank">Github</a>
+        <span class="arrow"
+          ><a href="https://github.com/BrendahKiragu" target="_blank"
+            >&#8594;</a
+          ></span
+        >
+      </div>
+    </section>
 
- </body>
+    <footer id="footer">
+      <p>&copy; Brendah Kiragu 2024</p>
+      <a href="https://arik-template.framer.website/contact">site</a>
+    </footer>
+  </body>
 </html>
