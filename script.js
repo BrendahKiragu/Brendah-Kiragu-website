@@ -6,7 +6,7 @@ const constantText = "I Build Interactive Web Apps with ";
 function typeText() {
     if (textIndex < textArray.length) {
         const text = textArray[textIndex];
-        changingText.textContent = `${constantText}${text}`;
+        changingText.textContent = `${constantText}...${text}`;
         changingText.style.width = `${changingText.textContent.length}ch`;
 
         setTimeout(() => {
