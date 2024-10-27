@@ -51,8 +51,13 @@ hr {
   font-size: 1.4rem;
   margin: 10px;
   align-items: center;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
+.button:hover {
+  transform: translateY(-5px);
+  color: blue;
+}
 /* NAVBAR STYLING */
 header {
   padding: 20px 0;
@@ -171,28 +176,12 @@ header {
   /* align-items: center; */
   font-family: "Satoshi Light", sans-serif;
 }
-#about h1{
+#about h1 {
   grid-column: span 3;
 }
-figcaption{
+figcaption {
   font-size: 1.4rem;
-  font-family: 'Lora', Courier, monospace;
-}
-
-@media (max-width: 768px) {
-  #about {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-  }
-  /* #services{
-    grid-template-columns: 1fr;
-  }
-  #services div{
-    width:90%
-  } */
+  font-family: "Lora", Courier, monospace;
 }
 
 /* SERVICES SECTION */
@@ -218,9 +207,10 @@ figcaption{
   margin-right: 20px;
 }
 
-.service h3{
+.service h3 {
   padding: 1.5px;
 }
+
 .service p {
   margin-top: 20px;
   line-height: 2.4rem;
@@ -251,11 +241,6 @@ figcaption{
   text-align: center;
 }
 
-.description {
-  font-size: 4rem;
-  font-style: italic;
-}
-
 #work h1 {
   margin: 0;
   padding: 20px;
@@ -280,7 +265,7 @@ figcaption{
   height: auto;
   background-color: rgb(45, 43, 39);
 }
-.process img{
+.process img {
   width: 100%;
 }
 
@@ -331,6 +316,44 @@ figcaption{
   color: #fff;
 }
 
+.client-say {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  width: 100%;
+}
+
+.client-say h1,
+.client-say p {
+  grid-column: 1 / -1; /* Span across all columns */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.description {
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+
+.description img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.description figcaption {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
 /* CONTACT SECTION */
 #contact,
 footer {
@@ -338,37 +361,37 @@ footer {
   padding: 40px 20px;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 800px;
-  width: 100%;
-  margin: 10px auto;
-  border: 1px solid #dac5a7;
-  border-radius: 8px;
-  align-items: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 20px;
-  margin-top: 10px;
-  padding: 15px;
-  font-size: 1.2rem;
-  width: 80%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #dac5a7;
-}
-
 .contact-links {
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
-  padding: 15px;
-  width: 100%;
+  padding: 10px;
+  width: 25%;
   max-width: 800px;
-  border: 2px solid #dac5a7;
+  /* border: 2px solid #dac5a7; */
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
+  /* transition: transform 0.3s; */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .client-say {
+    grid-template-columns: 1fr;
+  }
+  .client-say h1,
+  .client-say p {
+    grid-column: 1;
+    text-align: center;
+  }
 }
